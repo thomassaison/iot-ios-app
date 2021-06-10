@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import Moscapsule
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

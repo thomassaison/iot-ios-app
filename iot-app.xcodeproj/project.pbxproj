@@ -15,6 +15,8 @@
 		99C9743D267239D000DB3F8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C9743B267239D000DB3F8D /* LaunchScreen.storyboard */; };
 		99C97448267239D100DB3F8D /* iot_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C97447267239D100DB3F8D /* iot_appTests.swift */; };
 		99C97453267239D100DB3F8D /* iot_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C97452267239D100DB3F8D /* iot_appUITests.swift */; };
+		99C974842672612700DB3F8D /* Moscapsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C9747426723B7900DB3F8D /* Moscapsule.framework */; };
+		99C974852672612700DB3F8D /* Moscapsule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99C9747426723B7900DB3F8D /* Moscapsule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,42 @@
 			remoteGlobalIDString = 99C9742C267239CE00DB3F8D;
 			remoteInfo = "iot-app";
 		};
+		99C9747326723B7900DB3F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99C9746E26723B7900DB3F8D /* Moscapsule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09CF6B131A21F78700A97383;
+			remoteInfo = Moscapsule;
+		};
+		99C9747526723B7900DB3F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99C9746E26723B7900DB3F8D /* Moscapsule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09CF6B1E1A21F78700A97383;
+			remoteInfo = MoscapsuleTests;
+		};
+		99C9747726723B8000DB3F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99C9746E26723B7900DB3F8D /* Moscapsule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 09CF6B121A21F78700A97383;
+			remoteInfo = Moscapsule;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99C974862672612700DB3F8D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				99C974852672612700DB3F8D /* Moscapsule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		99C9742D267239CE00DB3F8D /* iot-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iot-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +86,8 @@
 		99C9744E267239D100DB3F8D /* iot-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iot-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C97452267239D100DB3F8D /* iot_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iot_appUITests.swift; sourceTree = "<group>"; };
 		99C97454267239D100DB3F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99C9746E26723B7900DB3F8D /* Moscapsule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Moscapsule.xcodeproj; path = ../../Moscapsule/Moscapsule.xcodeproj; sourceTree = "<group>"; };
+		99C974822672611700DB3F8D /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C974842672612700DB3F8D /* Moscapsule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +119,12 @@
 		99C97424267239CE00DB3F8D = {
 			isa = PBXGroup;
 			children = (
+				99C9746026723AB800DB3F8D /* Mosq */,
 				99C9742F267239CE00DB3F8D /* iot-app */,
 				99C97446267239D100DB3F8D /* iot-appTests */,
 				99C97451267239D100DB3F8D /* iot-appUITests */,
 				99C9742E267239CE00DB3F8D /* Products */,
+				99C9746C26723AE100DB3F8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +178,31 @@
 			path = "iot-appUITests";
 			sourceTree = "<group>";
 		};
+		99C9746026723AB800DB3F8D /* Mosq */ = {
+			isa = PBXGroup;
+			children = (
+				99C9746E26723B7900DB3F8D /* Moscapsule.xcodeproj */,
+			);
+			path = Mosq;
+			sourceTree = "<group>";
+		};
+		99C9746C26723AE100DB3F8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99C974822672611700DB3F8D /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99C9746F26723B7900DB3F8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99C9747426723B7900DB3F8D /* Moscapsule.framework */,
+				99C9747626723B7900DB3F8D /* MoscapsuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,10 +213,12 @@
 				99C97429267239CE00DB3F8D /* Sources */,
 				99C9742A267239CE00DB3F8D /* Frameworks */,
 				99C9742B267239CE00DB3F8D /* Resources */,
+				99C974862672612700DB3F8D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				99C9747826723B8000DB3F8D /* PBXTargetDependency */,
 			);
 			name = "iot-app";
 			productName = "iot-app";
@@ -225,6 +294,12 @@
 			mainGroup = 99C97424267239CE00DB3F8D;
 			productRefGroup = 99C9742E267239CE00DB3F8D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 99C9746F26723B7900DB3F8D /* Products */;
+					ProjectRef = 99C9746E26723B7900DB3F8D /* Moscapsule.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				99C9742C267239CE00DB3F8D /* iot-app */,
@@ -233,6 +308,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		99C9747426723B7900DB3F8D /* Moscapsule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Moscapsule.framework;
+			remoteRef = 99C9747326723B7900DB3F8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99C9747626723B7900DB3F8D /* MoscapsuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MoscapsuleTests.xctest;
+			remoteRef = 99C9747526723B7900DB3F8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		99C9742B267239CE00DB3F8D /* Resources */ = {
@@ -300,6 +392,11 @@
 			isa = PBXTargetDependency;
 			target = 99C9742C267239CE00DB3F8D /* iot-app */;
 			targetProxy = 99C9744F267239D100DB3F8D /* PBXContainerItemProxy */;
+		};
+		99C9747826723B8000DB3F8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moscapsule;
+			targetProxy = 99C9747726723B8000DB3F8D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -439,13 +536,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iot-app/Preview Content\"";
 				DEVELOPMENT_TEAM = 3HSBCGP9UG;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "iot-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "v.iot-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "e-----e--c-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,13 +559,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iot-app/Preview Content\"";
 				DEVELOPMENT_TEAM = 3HSBCGP9UG;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "iot-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "v.iot-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "e-----e--c-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
